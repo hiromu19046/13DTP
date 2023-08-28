@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %} 
+
+<h2>All Pizzas:</h2>
+{% for product in products %} 
+    <li><a href="//{{product[1]}} ({{product[2]}})"></a> <br/></li>
+{% endfor %} 
+
+{% endblock %} 

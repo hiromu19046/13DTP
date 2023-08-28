@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/static/css/style.css">
+
+<html>
+    <head>
+        <title>My Site - {{ page_title }}</title>  
+    </head>
+    <body>
+        {% include "header.html" %}
+        {% include "nav.html" %}
+        {% block content %}{% endblock %}
+        {%include "footer.html" %}
+    </body>
+</html>

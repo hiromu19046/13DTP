@@ -1,0 +1,11 @@
+{% extends "layout.html" %} 
+{% block content %} 
+
+<h2>
+    {{product.name}}
+</h2>
+{{product.description}}<br>
+<p>The category of this product is {{product.category_name}}</p>
+{{pizza.topping}}
+
+{% endblock %} 
