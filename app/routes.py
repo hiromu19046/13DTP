@@ -30,6 +30,18 @@ def all_products():
     print(results)
     return render_template("all_products.html", page_title="ALL PRODUCTS")
 
+@app.route("/men")
+def men():
+    return render_template("men.html", page_title="MEN")
+
+@app.route("/women")
+def women():
+    return render_template("women.html", page_title="WOMEN")
+
+@app.route("/kids")
+def kids():
+    return render_template("kids.html", page_title="KIDS")
+
 @app.route("/product/<int:id>")
 def product(id):
     product = models.Product.query.filter_by(id=id).first()
